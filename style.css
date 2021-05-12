@@ -1,0 +1,81 @@
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  padding: 5px;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  
+}
+
+.filter {
+  width: 270px;
+}
+
+.list {
+  width: 850px;
+}
+
+section {
+  max-height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.picture {
+  margin: 16px;
+  height: 168px;
+  width: 224px;
+  overflow: hidden;
+}
+
+.thumb {
+  height: 100%;
+}
+
+.describe {
+  margin: 16px 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.describe h2 {
+  height: 21px;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.describe p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.maininfo {
+
+}
+
+.price {
+  margin: 16px;
+  flex-grow: 2;
+  text-align: right;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  display: inline;
+  margin-right: 0px;
+}
