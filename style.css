@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 400;
+* {
   box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  
+  
   margin: 0 auto;
   padding: 0;
   width: 1140px;
@@ -11,7 +16,37 @@ body {
 }
 
 .container {
-  padding: 5px;
+  padding: 0px;
+}
+
+header {
+  height: 100px;
+  margin-top: 40px;
+  background-color: #FFFFFF;
+}
+
+nav {
+  margin-top: 20px;
+  
+}
+
+.menu {
+  height: 50px;
+  line-height: 50px;
+  color: #8D8D8D;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.menu li {
+  margin: 16px;
+}
+
+.crumbs li {
+  font-size: 12px;
+  line-height: 40px;
+  margin: 0 16px;
 }
 
 main {
@@ -19,11 +54,75 @@ main {
 }
 
 aside {
-  
+
 }
 
 .filter {
   width: 270px;
+  margin: 50px 20px 20px 0;
+  background-color: #FFFFFF;
+  padding: 16px;
+}
+
+.found {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.param_group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.filter .param {
+  margin-top: 11px;
+  margin-left: 0;
+}
+
+input, button {
+  margin-left: 0;
+  outline: none;
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range input[type=text] {
+  margin-top: 11px;
+  width: 113px;
+  height: 36px;
+  border: 1px solid #BDBDBD;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 4px;
+}
+
+.field input[type=text] {
+  margin-top: 11px;
+  height: 36px;
+  width: 100%;
+  border: 1px solid #BDBDBD;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 4px;
+}
+
+.btn_primary {
+  text-transform: uppercase;
+  height: 35px;
+  width: 100%;
+  background-color: #56CCF2;
+  color: #FFFFFF;
+  border: none;
+  line-height: 19px;
+  margin-top: 18px;
 }
 
 .list {
@@ -33,9 +132,8 @@ aside {
 .list h1 {
   font-weight: bold;
   font-size: 22px;
-  line-height: 26px;
   color: #333333;
-  margin: 5px 0 9px 0;
+  margin: 5px 0 2px 0;
 }
 
 .pages li {
