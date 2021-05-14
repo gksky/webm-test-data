@@ -146,7 +146,7 @@ input, button {
 
 
 .list {
-  width: 850px;
+  width: 100%;
 }
 
 .list h1 {
@@ -251,3 +251,58 @@ article {
   max-width: 565px;
 }
 
+footer {
+  
+}
+
+.footer {
+  background-color: #FFFFFF;
+  height: 243px;
+  padding: 39px 16px 24px 16px;
+  
+}
+
+.footer h1 {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  margin: 0 0 18px 0;
+}
+
+.contactinfo {
+  display: flex;
+
+}
+
+.phone img, .address img {
+  width: 21px;
+  margin-right: 7px;
+}
+
+.phone, .address {
+  display: flex;
+  align-items: start;
+  margin-bottom: 11px;
+  width: 270px;
+}
+
+.phone div, .address div{
+  color: #4F4F4F;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.info p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #4F4F4F;
+  width: 561px;
+}
+
+.copyright {
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  color: #828282;
+}
