@@ -9,13 +9,18 @@
 
   $result = $mysqli->query("SELECT * FROM breadcrumbs WHERE text='DAF'");
   $aCrumbs = [];
-  $i = 0;
   if ($result) {
-    while ($row = $result->fetch_assoc()) {
-      $aCrumbs[$i] = $row;
-      $i++;
+    $row = $result->fetch_assoc();
+    $aCrumbs[$row['parentID']] = $row;
+    while ($row['parentID'] > 0) {
+      $result = $mysqli->query("SELECT * FROM breadcrumbs WHERE id=" . $row['parentID']);
+      if ($result) {
+        $row = $result->fetch_assoc();
+        $aCrumbs[$row['parentID']] = $row;
+      }
     }
   }
+  $aCrumbs = array_reverse($aCrumbs);
 ?>
 
     <nav>
@@ -28,15 +33,12 @@
       </ul>
       <div class="crumbs">
         <ul>
-          <li>
-            Breadcrumbs1
-          </li>
-          <li>
-            Breadcrumbs2
-          </li>
-          <li>
-            Breadcrumbs3
-          </li>
+        <?php
+          foreach ($aCrumbs as $key => $crumbs) {
+            echo '<li><a href="' . $crumbs['href'] . '">' . $crumbs['text'] . '</a></li>';
+            if ($key < count($aCrumbs) - 1) { echo ">"; }
+          }
+        ?>
         </ul>
       </div>
     </nav>
