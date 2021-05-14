@@ -13,6 +13,16 @@ body {
   background-color: #E5E5E5;
 }
 
+a {
+  color: #2F80ED;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #56CCF2;
+  text-decoration: underline;
+}
+
 .container {
   padding: 0px;
 }
@@ -116,6 +126,16 @@ input, button {
   border: none;
   line-height: 19px;
   margin-top: 18px;
+  cursor: pointer;
+}
+
+.btn_primary:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn_primary:active {
+  box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.05);
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
 }
 
 .pagination {
@@ -140,10 +160,9 @@ input, button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(src/arrow.png) 96% no-repeat #FFFFFF;
+  background: url("../arrow.png") 96% no-repeat #FFFFFF;
   outline: none;
 }
-
 
 .list {
   width: 100%;
@@ -168,12 +187,27 @@ input, button {
   margin: 16px 16px 16px 0;
 }
 
+.pages li.active {
+  color: #000000;
+  background-color: #56CCF2;
+}
+
 section {
   max-height: 200px;
   display: flex;
   justify-content: space-between;
   background-color: #FFFFFF;
   margin-bottom: 16px;
+}
+
+section:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+
+section:active {
+  box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.05);
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
 }
 
 section:last-of-type {
@@ -200,7 +234,6 @@ section:last-of-type {
 }
 
 .item h2 {
-  height: 21px;
   font-size: 18px;
   margin: 0 0 5px 0;
 }
@@ -251,15 +284,10 @@ article {
   max-width: 565px;
 }
 
-footer {
-  
-}
-
 .footer {
   background-color: #FFFFFF;
   height: 243px;
   padding: 39px 16px 24px 16px;
-  
 }
 
 .footer h1 {
@@ -271,7 +299,6 @@ footer {
 
 .contactinfo {
   display: flex;
-
 }
 
 .phone img, .address img {
