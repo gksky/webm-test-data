@@ -5,116 +5,116 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test task - Front-End Developer</title>
-  <link rel="stylesheet" type="text/css" href="src/css/style.css">
+  <link rel="stylesheet" type="text/css" href="src/css/style-bem.css">
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="logo">
+    <header class="header">
+      <div class="header__logo">
         Header / Logo
       </div>
     </header>
-    <nav>
-      <ul class="menu">
-        <li>
+    <nav class="nav">
+      <ul class="nav__menu menu">
+        <li class="menu__item">
           Navlink1
         </li>
-        <li>
+        <li class="menu__item">
           Navlink2
         </li>
-        <li>
+        <li class="menu__item">
           Navlink3
         </li>
-        <li>
+        <li class="menu__item">
           Navlink4
         </li>
       </ul>
-      <div class="crumbs">
+      <div class="nav__crumbs">
         <ul>
-          <li>
+          <li class="nav__crumbsItem">
             Breadcrumbs1
           </li>
-          <li>
+          <li class="nav__crumbsItem">
             Breadcrumbs2
           </li>
-          <li>
+          <li class="nav__crumbsItem">
             Breadcrumbs3
           </li>
         </ul>
       </div>
     </nav>
-    <main>
-      <aside>
-        <div class="filter">
-          <div class="found">26 Results Found</div>
-          <div class="param_group">
-            <div class="param_name">
+    <main class="main">
+      <aside class="aside">
+        <div class="aside__filter filter">
+          <div class="filter__found">26 Results Found</div>
+          <div class="filter__paramTitle filterTitle">
+            <div class="filterTitle__paramName">
               Param 1
             </div>
-            <div class="arrow"><img src="src/arrow.png"></div>
+            <div class="filterTitle__arrow"><img src="src/arrow.png"></div>
           </div>
-          <div class="param">
+          <div class="filter__param">
             <input type="checkbox">
             <label for="">Value 1</label>
           </div>
-          <div class="param">
+          <div class="filter__param">
             <input type="checkbox">
             <label for="">Value 2</label>
           </div>
-          <div class="param">
+          <div class="filter__param">
             <input type="checkbox">
             <label for="">Value 3</label>
           </div>
-          <div class="param">
+          <div class="filter__param">
             <input type="checkbox">
             <label for="">Value 4</label>
           </div>
-          <div class="param">
+          <div class="filter__param">
             <input type="checkbox">
             <label for="">Value 5</label>
           </div>
           
-          <div class="param_group">
-            <div class="param_name">
+          <div class="filter__paramTitle filterTitle">
+            <div class="filterTitle__paramName">
               Param 2
             </div>
-            <div class="arrow"><img src="src/arrow.png"></div>
+            <div class="filterTitle__arrow"><img src="src/arrow.png"></div>
           </div>
-          <div class="param">
+          <div class="filter__param">
             <input type="radio">
             <label for="">Value 1</label>
           </div>
-          <div class="param">
+          <div class="filter__param">
             <input type="radio">
             <label for="">Value 2</label>
           </div>
-          <div class="param">
+          <div class="filter__param">
             <input type="radio">
             <label for="">Value 3</label>
           </div>
 
-          <div class="param_group">
-            <div class="param_name">
-              Param 2
+          <div class="filter__paramTitle filterTitle">
+            <div class="filterTitle__paramName">
+              Param 3
             </div>
-            <div class="arrow"><img src="src/arrow.png"></div>
+            <div class="filterTitle__arrow"><img src="src/arrow.png"></div>
           </div>
 
-          <div class="range">
+          <div class="filter__range">
             <input type="text" placeholder="min"><input type="text" placeholder="max">
           </div>
 
-          <div class="param_group">
-            <div class="param_name">
-              Param 2
+          <div class="filter__paramTitle filterTitle">
+            <div class="filterTitle__paramName">
+              Param 4
             </div>
-            <div class="arrow"><img src="src/arrow.png"></div>
+            <div class="filterTitle__arrow"><img src="src/arrow.png"></div>
           </div>
 
-          <div class="field">
+          <div class="filter__field">
             <input type="text" placeholder="Keyword">
           </div>
-          <button class="btn_primary">
+          <button class="filter__btnPrimary">
             SEARCH
           </button>
         </div>
